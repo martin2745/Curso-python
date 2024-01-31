@@ -1,4 +1,3 @@
-/__/ejercicios/boletin_4/__pycache__/
-/__/ejercicios/boletin_7/__pycache__/
-/__/01_basico/__pycache__/
-/__/02_intermedio/__pycache__/
+__ejercicios/*/__pycache__/*
+01_basico/__pycache__/*
+02_intermedio/__pycache__/*
