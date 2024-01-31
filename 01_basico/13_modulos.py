@@ -13,13 +13,10 @@ import mi_modulo
 mi_modulo.mi_suma(5, 3, 1)
 mi_modulo.mi_print("Hola Python!")
 
-
 mi_suma(5, 3, 1)
 mi_print("Hola python")
 
-
 print(math.pi)
 print(math.pow(2, 8))
-
 
 print(PI_VALUE)

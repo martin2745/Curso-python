@@ -6,6 +6,7 @@ __author__ = "Martín Gil Blanco"
 # Clases
 
 # Definición
+# En el Capítulo 03_POO se ve más en detalle este contenido
 
 class MiPersonaVacia:
     pass  

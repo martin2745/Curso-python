@@ -41,3 +41,22 @@ print("El apellido es:", apellido)
 #Es necesario tener cuidado ya que python es un lenguaje de tipado débil 
 apellido = 123
 print("Ahora sobreescribo el valor de apellido por un número:", apellido, "siendo de tipo", type(apellido))
+
+'''
+Aunque podemos indicar el tipo de las variables no vamos a asegurar
+con ello que una variable sea de un determinado tipo a lo largo del
+código. Dicho de otro modo, podemos modificar el valor de la variable
+nombre = 22 y el resultado será: Nombre: 22 Tipo: <class 'int'>
+'''
+
+# Indicamos tipo en código
+nombre: str = "Juan"
+edad: int = 25
+altura: float = 1.75
+es_estudiante: bool = True
+
+# Imprimimos los valores y tipos
+print("Nombre:", nombre, "Tipo:", type(nombre))
+print("Edad:", edad, "Tipo:", type(edad))
+print("Altura:", altura, "Tipo:", type(altura))
+print("¿Es estudiante?", es_estudiante, "Tipo:", type(es_estudiante))
