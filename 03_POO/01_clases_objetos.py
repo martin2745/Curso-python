@@ -23,3 +23,8 @@ telefono_dos = Telefono("Apple", "15 Pro", "48MP")
 print(telefono_uno) # <__main__.Telefono object at 0x0000018C135A9A30>
 print(telefono_dos) # <__main__.Telefono object at 0x0000018C135A9A30>
 print(Telefono.color_caja) # Blanco, pertenece a la clase
+print(telefono_uno.color_caja) # Blanco, pertenece a la clase
+print(telefono_dos.color_caja) # Blanco, pertenece a la clase
+print(telefono_uno.marca) # Nombre de la marca del primer teléfono
+telefono_uno.marca = "Sony"
+print(telefono_uno.marca) # Nombre de la marca del primer teléfono

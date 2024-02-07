@@ -24,7 +24,7 @@ class Empleado(Persona):
         self.puesto = puesto
 
     def tipo(self):
-        print("Soy un emleado")
+        print("Soy un empleado")
 
     def __str__(self):
         # Utilizamos super().__str__() para obtener la representación de la clase base

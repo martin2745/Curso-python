@@ -8,10 +8,10 @@ __author__ = "Martín Gil Blanco"
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre                   # Atributo público
-        self._edad = edad                      # Atributo protegido
-        self.__direccion = "Desconocida"       # Atributo privado
+        self._edad = edad                      # Atributo privado
+        self.__direccion = "Desconocida"       # Atributo muy privado
 
-    # Métodos para acceder y modificar atributos protegidos y privados
+    # Métodos para acceder y modificar atributos privados
     def get_edad(self):
         return self._edad
 
@@ -31,12 +31,17 @@ persona = Persona("Juan", 30)
 # Acceder a atributos públicos
 print("Nombre:", persona.nombre)
 
-# Acceder y modificar atributos protegidos
+# Acceder y modificar atributos privados
 print("Edad:", persona.get_edad())
 persona.set_edad(35)
 print("Nueva Edad:", persona.get_edad())
 
-# Acceder y modificar atributos privados
 print("Dirección:", persona.get_direccion())
 persona.set_direccion("Calle Principal")
 print("Nueva Dirección:", persona.get_direccion())
+
+# Podemos tener problemas con casos como los siguientes donde accedemos sin pasar por el getter/setter
+print("Edad:", persona._edad)
+persona._edad = 100
+print("Edad:", persona._edad)
+# No permite modificar ni acceder a elementos muy privados como __direccion

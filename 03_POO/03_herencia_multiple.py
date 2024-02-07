@@ -49,7 +49,7 @@ class Pajaro(Animal, Volador):
 
 
 # Crear una instancia de la clase Pajaro
-pajaro1 = Pajaro(nombre="Loro", altura_maxima=100, tipo_pico="Curvo")
+pajaro1 = Pajaro("Loro", 100, "Curvo")
 
 # Acceder a métodos de las clases base
 pajaro1.comer()

@@ -17,6 +17,8 @@ class Moto(Vehiculo):
     def hacer_sonar(self):
         return "Broom Broom!"
 
+# Un mismo método puede comportarse de manera diferente 
+# según el tipo de objeto que lo esté ejecutando
 def hacer_sonar_vehiculo(vehiculo):
     return vehiculo.hacer_sonar()
 
