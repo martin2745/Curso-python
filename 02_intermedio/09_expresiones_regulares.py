@@ -22,9 +22,9 @@ Limites
 $       - Final de una cadena de texto
 
 Cuantificadores:
-*       - 0 o Más
-+       - 1 o Más
 ?       - 0 o Uno
++       - 1 o Más
+*       - 0 o Más
 {3}     - Numero Exacto
 {3,4}   - Rango de Numeros (Minimo, Maximo)
 

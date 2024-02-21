@@ -57,8 +57,8 @@ print(4/2)
 # Definir una excepción personalizada
 class MiExcepcionPersonalizada(Exception):
     def __init__(self, mensaje):
-        self.mensaje = mensaje
         super().__init__(mensaje)
+        self.mensaje = mensaje
         
 def generar_excepcion():
     raise MiExcepcionPersonalizada("¡Esto es una excepción personalizada!")
