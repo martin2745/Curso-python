@@ -84,6 +84,6 @@ def ejemplo_kwargs(**kwargs):
     for clave, valor in kwargs.items():
         print(clave, " : ", valor)
 
-ejemplo_kwargs(nombre="Manuel", apellidos="Varela")
-# Nombre : Manuel
-# Apellidos : Varela
+ejemplo_kwargs(nombre="Martin", apellidos="Gil")
+# Nombre : Martin
+# Apellidos : Gil
