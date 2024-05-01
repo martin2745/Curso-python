@@ -1,0 +1,629 @@
+---
+title: "15.5. Test 2 solución"
+weight: 5
+---
+
+1. ¿Qué estrutura de control se utiliza en Python para executar un bloque de código repetidamente mentres se cumpra unha condición?
+   - [ ] `for`
+   - [ ] `do-while`
+   - [ ] `if`
+   - [x] `while`
+
+2. ¿Cal é o propósito principal do bucle `while` en Python?
+   - [ ] Executar un bloque de código un número fixo de veces.
+   - [x] Executar un bloque de código mentres se cumpra unha condición especificada.
+   - [ ] Executar un bloque de código unha vez e logo avaliar unha condición.
+   - [ ] Executar un bloque de código ata que se alcance o final dunha lista.
+
+3. ¿Cal é a diferenza principal entre un bucle `while` e un bucle `for` en Python?
+   - [ ] O bucle `while` execútase un número fixo de veces, mentres que o bucle `for` execútase ata que se cumpra unha condición.
+   - [ ] O bucle `while` utilízase para iterar sobre elementos dunha secuencia, mentres que o bucle `for` utilízase para executar un bloque de código ata que se cumpra unha condición.
+   - [x] O bucle `while` execútase mentres se cumpra unha condición, mentres que o bucle `for` execútase un número fixo de veces.
+   - [ ] O bucle `while` utilízase para iterar sobre elementos dunha secuencia, mentres que o bucle `for` utilízase para executar un bloque de código ata que se alcance o final dunha lista.
+
+4. ¿Como se evita que un bucle `while` se converta nun bucle infinito en Python?
+   - [x] Usando a palabra chave `break` para saír do bucle cando se cumpra unha condición.
+   - [ ] Usando a palabra chave `continue` para saltar á seguinte iteración do bucle.
+   - [ ] Utilizando unha estrutura `if` dentro do bucle para verificar se se alcanzou unha condición de saída.
+   - [ ] Non é posible evitar que un bucle `while` se converta nun bucle infinito.
+
+5. ¿Que ocorre se a condición dun bucle `while` nunca se avalía como `False` en Python?
+   - [ ] O bucle execútase unha vez e logo detense.
+   - [ ] O bucle execútase un número fixo de veces e logo detense.
+   - [ ] O bucle execútase repetidamente ata que o programa se interrompe manualmente.
+   - [x] O bucle execútase infinitamente e o programa bloquea.
+
+6. ¿Que fai o seguinte bucle `while` en Python?
+
+   ```python
+   i = 0
+   while i < 10:
+       print(i)
+       if i == 5:
+           break
+       i += 1
+   ```
+
+   - [ ] Imprime os números do 0 ao 9 e despois detén a execución.
+   - [ ] Imprime os números do 0 ao 5 e despois detén a execución.
+   - [x] Imprime os números do 0 ao 5 e continúa a execución.
+   - [ ] Imprime os números do 1 ao 5 e despois detén a execución.
+
+7. ¿Que fará o seguinte bucle `while` en Python?
+
+   ```python
+   x = 10
+   while x > 0:
+       print(x)
+       x -= 1
+       if x == 5:
+           break
+   ```
+
+   - [ ] Imprime os números do 10 ao 1 e detén a execución antes de imprimir o número 5.
+   - [ ] Imprime os números do 10 ao 1 e detén a execución despois de imprimir o número 5.
+   - [x] Imprime os números do 10 ao 6 e detén a execución.
+   - [ ] Imprime os números do 9 ao 1 e detén a execución antes de imprimir o número 5.
+
+8. ¿Que ocorre cando se executa o seguinte código en Python?
+
+   ```python
+   while True:
+       nome = input("Introduce o teu nome: ")
+       if nome == "fin":
+           break
+       print("Ola, " + nome)
+   ```
+
+   - [ ] Pide ao usuario que introduza o seu nome repetidamente ata que escriba "fin" e despois detén a execución.
+   - [x] Pide ao usuario que introduza o seu nome repetidamente ata que escriba "fin" e continúa a execución.
+   - [ ] Pide ao usuario que introduza o seu nome unha vez e despois detén a execución.
+   - [ ] Pide ao usuario que introduza o seu nome unha vez e continúa a execución.
+
+9. Que ocorre cando se executa o seguinte código en Python?
+
+   ```python
+   x = 0
+   while x < 10:
+       print(x)
+       x += 1
+       if x == 5:
+           continue
+   ```
+
+   - [ ] Imprime os números do 0 ao 9 excluíndo o número 5.
+   - [x] Imprime os números do 0 ao 9 sen interrupcións.
+   - [ ] O código xera un erro de sintaxe.
+   - [ ] O código entra nun bucle infinito.
+
+10. Que resultado produce o seguinte código en Python?
+
+   ```python
+   lista = [1, 2, 3, 4, 5]
+   for elemento in lista:
+       if elemento == 3:
+           break
+       print(elemento)
+   ```
+
+   - [x] Imprime os números 1 e 2.
+   - [ ] Imprime os números 1, 2 e 3.
+   - [ ] Imprime os números 1, 2, 3 e 4.
+   - [ ] O código xera un erro de sintaxe.
+
+
+11. ¿Que fai o seguinte bucle `while` en Python?
+
+   ```python
+   i = 0
+   while i < 5:
+       i += 1
+       if i == 3:
+           continue
+       print(i)
+   ```
+
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 3.
+   - [x] Imprime os números do 1 ao 4, excluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 5, incluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 4, incluíndo o número 3.
+
+12. ¿Que resultado produce o seguinte código en Python?
+
+   ```python
+   x = 0
+   while x < 5:
+       x += 1
+       if x == 3:
+           continue
+       print(x)
+   ```
+
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 3.
+   - [x] Imprime os números do 1 ao 4, excluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 5, incluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 4, incluíndo o número 3.
+
+13. ¿Que ocorre cando se executa o seguinte código en Python?
+
+   ```python
+   while True:
+       nome = input("Introduce o teu nome: ")
+       if not nome:
+           continue
+       if nome == "fin":
+           break
+       print("Ola, " + nome)
+   ```
+
+   - [ ] Pide ao usuario que introduza o seu nome repetidamente ata que escriba "fin" e despois detén a execución.
+   - [x] Pide ao usuario que introduza o seu nome repetidamente ata que escriba "fin" e despois continúa a execución.
+   - [ ] Pide ao usuario que introduza o seu nome unha vez e despois detén a execución.
+   - [ ] Pide ao usuario que introduza o seu nome unha vez e despois continúa a execución.
+
+14. ¿Que fai o seguinte bucle `while` en Python?
+
+   ```python
+   x = 0
+   while x < 5:
+       x += 1
+       if x == 3:
+           continue
+       print(x)
+   ```
+
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 3.
+   - [x] Imprime os números do 1 ao 4, excluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 5, incluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 4, incluíndo o número 3.
+
+15. ¿Que resultado produce o seguinte código en Python?
+
+   ```python
+   lista = [1, 2, 3, 4, 5]
+   for elemento in lista:
+       if elemento == 3:
+           continue
+       print(elemento)
+   ```
+
+   - [x] Imprime os números 1, 2, 4 e 5.
+   - [ ] Imprime os números 1, 2 e 4.
+   - [ ] Imprime os números 1, 2, 3, 4 e 5.
+   - [ ] O código xera un erro de sintaxe.
+
+16. ¿Que resultado produce o seguinte código en Python?
+
+   ```python
+   x = 0
+   while True:
+       x += 1
+       if x == 5:
+           break
+       if x == 3:
+           continue
+       print(x)
+   ```
+
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 3.
+   - [x] Imprime os números do 1 ao 4, excluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 5, incluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 4, incluíndo o número 3.
+
+17. ¿Que fai o seguinte bucle `while` en Python?
+
+   ```python
+   i = 0
+   while True:
+       i += 1
+       if i == 5:
+           break
+       if i == 3:
+           continue
+       print(i)
+   ```
+
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 3.
+   - [x] Imprime os números do 1 ao 4, excluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 5, incluíndo o número 3.
+   - [ ] Imprime os números do 1 ao 4, incluíndo o número 3.
+
+18. ¿Cal é o resultado de executar o seguinte código en Python?
+
+   ```python
+   x = 0
+   while x < 10:
+       x += 1
+       if x == 5:
+           continue
+       if x == 8:
+           break
+       print(x)
+   ```
+
+   - [ ] Imprime os números do 1 ao 4, excluíndo o número 5.
+   - [ ] Imprime os números do 1 ao 5, excluíndo o número 8.
+   - [x] Imprime os números do 1 ao 7, excluíndo o número 5.
+   - [ ] Imprime os números do 1 ao 7, excluíndo o número 8.
+
+
+19. ¿Qué resultado produce `cadea[2:5]` en Python se `cadea = "Python"`?
+   - [x] `"tho"`
+   - [ ] `"th"`
+   - [ ] `"hon"`
+   - [ ] `"yth"`
+
+20. ¿Como se pode obter a subcadea que conteña os últimos tres caracteres dunha cadea en Python?
+   - [x] `cadea[-3:]`
+   - [ ] `cadea[:-3]`
+   - [ ] `cadea[-1:-4:-1]`
+   - [ ] `cadea[-1:-4]`
+
+21. ¿Cal é a forma correcta de obter cada segundo carácter dunha cadea en Python?
+   - [ ] `cadea[:2]`
+   - [ ] `cadea[2:]`
+   - [x] `cadea[1:2]`
+   - [ ] `cadea[:2:]`
+
+22. ¿Que produce `cadea[::-1]` en Python?
+   - [x] A cadea invertida.
+   - [ ] Unha subcadea que conteña os caracteres desde o final ata o principio.
+   - [ ] Un erro de sintaxe.
+   - [ ] Unha subcadea baleira.
+
+23. ¿Como se pode obter a subcadea que conteña os caracteres en posicións pares dunha cadea en Python?
+   - [x] `cadea[1::2]`
+   - [ ] `cadea[::2]`
+   - [ ] `cadea[2::]`
+   - [ ] `cadea[::]`
+
+24. ¿Que produce `cadea[-2:-5:-1]` en Python se `cadea = "abcdef"`?
+   - [x] `"edc"`
+   - [ ] `"edcb"`
+   - [ ] `"dcba"`
+   - [ ] `"cba"`
+
+25. ¿Cal é o resultado de `cadea[3:-2]` en Python se `cadea = "abcdefghijklmno"`?
+   - [x] `"defghijklm"`
+   - [ ] `"defghijk"`
+   - [ ] `"defghijklmn"`
+   - [ ] `"defghij"`
+
+26. ¿Que fai `cadea[:4]` en Python?
+   - [x] Obtén os primeiros catro caracteres da cadea.
+   - [ ] Obtén os caracteres desde o cuarto ata o final da cadea.
+   - [ ] Obtén os últimos catro caracteres da cadea.
+   - [ ] Non produce ningún resultado.
+
+27. ¿Que produce `cadea[-3:-6:-1]` en Python se `cadea = "python"`?
+   - [ ] `"noh"`
+   - [ ] `"noht"`
+   - [ ] `"t"`
+   - [x] `"hty"`
+
+28. ¿Que resultado produce `cadea[2:]` en Python se `cadea = "abcdefgh"`?
+    - [x] `"cdefgh"`
+    - [ ] `"bcdefgh"`
+    - [ ] `"abcdefgh"`
+    - [ ] `"cdefgha"`
+
+
+29. ¿Qué resultado produce a comparación `cadea1 == cadea2` en Python se `cadea1 = "Hola"` e `cadea2 = "Hola"`?
+   - [x] `True`
+   - [ ] `False`
+   - [ ] Erro de sintaxe
+   - [ ] Ningunha das anteriores
+
+30. ¿Qué fai a expresión `subcadea in cadea` en Python?
+   - [ ] Verifica se `subcadea` é un subconxunto de `cadea`.
+   - [ ] Comproba se `subcadea` é igual a `cadea`.
+   - [x] Comproba se `cadea` contén a subcadea `subcadea`.
+   - [ ] Xenera un erro de sintaxe.
+
+31. ¿Cal é o resultado da comparación `cadea1 < cadea2` en Python se `cadea1 = "abc"` e `cadea2 = "def"`?
+   - [x] `True`
+   - [ ] `False`
+   - [ ] Erro de sintaxe
+   - [ ] Ningunha das anteriores
+
+32. ¿Qué fai a expresión `subcadea not in cadea` en Python?
+   - [ ] Verifica se `subcadea` non é un subconxunto de `cadea`.
+   - [ ] Comproba se `subcadea` non é igual a `cadea`.
+   - [x] Comproba se `cadea` non contén a subcadea `subcadea`.
+   - [ ] Xenera un erro de sintaxe.
+
+33. ¿Qué resultado produce a comparación `cadea1 != cadea2` en Python se `cadea1 = "Python"` e `cadea2 = "python"`?
+   - [x] `True`
+   - [ ] `False`
+   - [ ] Erro de sintaxe
+   - [ ] Ningunha das anteriores
+
+34. Cal é o resultado da expresión `"hola" in "Hola, ¿cómo estás?"` en Python?
+   - [ ] `True`
+   - [x] `False`
+   - [ ] Erro de sintaxe
+   - [ ] Ningunha das anteriores
+
+35. ¿Qué fai o método `upper()` en Python cando se aplica a unha cadea?
+   - [x] Converte todos os caracteres da cadea a maiúsculas.
+   - [ ] Converte todos os caracteres da cadea a minúsculas.
+   - [ ] Elimina os espazos en branco ao principio e ao final da cadea.
+   - [ ] Divide a cadea nunha lista de subcadeas.
+
+36. ¿Cal é o resultado de aplicar o método `lower()` á cadea `"Hola Mundo"` en Python?
+   - [ ] `"Hola Mundo"`
+   - [x] `"hola mundo"`
+   - [ ] `"HOLA MUNDO"`
+   - [ ] Ningunha das anteriores
+
+37. ¿Qué fai o método `strip()` en Python cando se aplica a unha cadea?
+   - [ ] Converte todos os caracteres da cadea a maiúsculas.
+   - [ ] Converte todos os caracteres da cadea a minúsculas.
+   - [x] Elimina os espazos en branco ao principio e ao final da cadea.
+   - [ ] Divide a cadea nunha lista de subcadeas.
+
+38. ¿Cal é o resultado de aplicar o método `replace("a", "e")` á cadea `"banana"` en Python?
+   - [x] `"benene"`
+   - [ ] `"beneene"`
+   - [ ] `"benana"`
+   - [ ] Ningunha das anteriores
+
+39. ¿Qué fai o método `split()` en Python cando se aplica a unha cadea?
+   - [ ] Converte todos os caracteres da cadea a maiúsculas.
+   - [ ] Converte todos os caracteres da cadea a minúsculas.
+   - [ ] Elimina os espazos en branco ao principio e ao final da cadea.
+   - [x] Divide a cadea nunha lista de subcadeas.
+
+40. ¿Cal é o resultado de aplicar o método `upper()` á cadea `"Python"` en Python?
+   - [ ] `"python"`
+   - [x] `"PYTHON"`
+   - [ ] `"Python"`
+   - [ ] Ningunha das anteriores
+
+41. ¿Cal é o resultado de aplicar o método `lower()` á cadea `"HELLO"` en Python?
+   - [ ] `"HELLO"`
+   - [x] `"hello"`
+   - [ ] `"Hello"`
+   - [ ] Ningunha das anteriores
+
+42. ¿Qué fai o método `strip()` en Python cando se aplica á cadea `"  Hola  "`?
+   - [x] `"Hola"`
+   - [ ] `"Hola  "`
+   - [ ] `"  Hola"`
+   - [ ] `"Hola"`
+
+43. ¿Cal é o resultado de aplicar o método `replace("o", "a")` á cadea `"Hola Mundo"` en Python?
+   - [x] `"Hala Munda"`
+   - [ ] `"Hala Mando"`
+   - [ ] `"Hala Mundo"`
+   - [ ] Ningunha das anteriores
+
+44. ¿Qué fai o método `split()` en Python cando se aplica á cadea `"Hola, Mundo"`?
+    - [x] Divide a cadea nunha lista de subcadeas separadas por comas.
+    - [ ] Converte todos os caracteres da cadea a maiúsculas.
+    - [ ] Converte todos os caracteres da cadea a minúsculas.
+    - [ ] Elimina os espazos en branco ao principio e ao final da cadea.
+
+45. ¿Cal é o resultado de aplicar o método `upper()` á cadea `"hola mundo"` en Python?
+    - [ ] `"Hola Mundo"`
+    - [x] `"HOLA MUNDO"`
+    - [ ] `"hola mundo"`
+    - [ ] Ningunha das anteriores
+
+46. ¿Cal é o resultado de aplicar o método `lower()` á cadea `"HOLA MUNDO"` en Python?
+    - [ ] `"Hola Mundo"`
+    - [ ] `"HOLA MUNDO"`
+    - [x] `"hola mundo"`
+    - [ ] Ningunha das anteriores
+
+47. ¿Qué fai o método `strip()` en Python cando se aplica á cadea `"¡Hola Mundo!"`?
+    - [ ] Elimina os signos de exclamación ao principio e ao final da cadea.
+    - [ ] Converte todos os caracteres da cadea a maiúsculas.
+    - [ ] Converte todos os caracteres da cadea a minúsculas.
+    - [x] Non se producen modificacións na cadea.
+
+48. ¿Cal é o resultado de aplicar o método `replace(" ", "")` á cadea `"Hola Mundo"` en Python?
+    - [x] `"HolaMundo"`
+    - [ ] `"Hola Mundo"`
+    - [ ] `"Hola  Mundo"`
+    - [ ] Ningunha das anteriores
+
+49. ¿Qué fai o método `split()` en Python cando se aplica á cadea `"Python é un lenguaxe de programación"`?
+    - [x] Divide a cadea nunha lista de subcadeas separadas por espazos en branco.
+    - [ ] Converte todos os caracteres da cadea a maiúsculas.
+    - [ ] Converte todos os caracteres da cadea a minúsculas.
+    - [ ] Elimina os espazos en branco ao principio e ao final da cadea.
+
+
+50. ¿Cal é a forma correcta de crear unha lista baleira en Python?
+   - [x] `lista = []`
+   - [ ] `lista = {}`
+   - [ ] `lista = ()`
+   - [ ] `lista = [None]`
+
+51. ¿Qué fai o método `append()` en Python cando se aplica a unha lista?
+   - [ ] Elimina o último elemento da lista.
+   - [ ] Agrega un elemento ao principio da lista.
+   - [x] Agrega un elemento ao final da lista.
+   - [ ] Ordena a lista en orde ascendente.
+
+52. ¿Cal é o resultado de `len(lista)` se `lista = [1, 2, 3, 4, 5]` en Python?
+   - [ ] 0
+   - [ ] 1
+   - [ ] 4
+   - [x] 5
+
+53. ¿Qué operador se utiliza para concatenar dúas listas en Python?
+   - [ ] `&`
+   - [ ] `|`
+   - [x] `+`
+   - [ ] `-`
+
+54. ¿Qué método se utiliza para eliminar un elemento dunha lista en Python?
+   - [x] `remove()`
+   - [x] `pop()`
+   - [ ] `delete()`
+   - [ ] `discard()`
+
+55. ¿Cal é o resultado de `lista[::-1]` se `lista = [1, 2, 3, 4, 5]` en Python?
+   - [ ] `[1, 2, 3, 4, 5]`
+   - [x] `[5, 4, 3, 2, 1]`
+   - [ ] `[5, 4, 3, 2]`
+   - [ ] `[4, 3, 2, 1]`
+
+56. ¿Cal é a forma correcta de acceder ao terceiro elemento dunha lista en Python?
+   - [ ] `lista(3)`
+   - [x] `lista[2]`
+   - [ ] `lista(2)`
+   - [ ] `lista.3`
+
+
+57. ¿Cal é o resultado de `lista.append(6)` se `lista = [1, 2, 3, 4, 5]` en Python?
+    - [x] `[1, 2, 3, 4, 5, 6]`
+    - [ ] `[1, 2, 3, 4, 5]`
+    - [ ] `[1, 2, 3, 4, 5, [6]]`
+    - [ ] `None`
+
+58. ¿Que fai a seguinte expresión en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   pares = list(filter(lambda x: x % 2 == 0, numeros))
+   ```
+
+   - [x] Filtra os números pares da lista `numeros`.
+   - [ ] Transforma cada número da lista `numeros` no seu cadrado.
+   - [ ] Duplica os números pares da lista `numeros`.
+   - [ ] Xenera unha lista cos números impares da lista `numeros`.
+
+59. ¿Cal sería o resultado da seguinte expresión en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   cuadrados = list(map(lambda x: x ** 2, numeros))
+   ```
+
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [ ] `[1, 2, 3, 4, 5]`
+   - [x] `[2, 4, 6, 8, 10]`
+   - [ ] `[1, 3, 5, 7, 9]`
+
+60. ¿Que fai a seguinte expresión en Python?
+
+   ```python
+   palabras = ["hola", "adiós", "qué", "bien"]
+   longitud_palabras = list(map(lambda x: len(x), palabras))
+   ```
+
+   - [ ] Calcula a suma das longitudes das palabras na lista `palabras`.
+   - [ ] Xenera unha lista coas palabras da lista `palabras` que teñen unha lonxitude maior a 4.
+   - [x] Xenera unha lista coas longitudes das palabras na lista `palabras`.
+   - [ ] Converte todas as palabras na lista `palabras` a maiúsculas.
+
+61. ¿Cal sería o resultado da seguinte expresión en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   pares_duplicados = list(map(lambda x: x * 2, filter(lambda x: x % 2 == 0, numeros)))
+   ```
+
+   - [ ] `[2, 4, 6, 8, 10]`
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [x] `[4, 8]`
+   - [ ] `[2, 6, 10]`
+
+62. ¿Que fai a seguinte expresión en Python?
+
+   ```python
+   palabras = ["hola", "adiós", "qué", "bien"]
+   vocales = list(filter(lambda x: x in "aeiou", "".join(palabras)))
+   ```
+
+   - [ ] Filtra as palabras na lista `palabras` que conteñen vocais.
+   - [x] Filtra as vocais das palabras na lista `palabras`.
+   - [ ] Xenera unha lista coas vocais de todas as palabras na lista `palabras`.
+   - [ ] Xenera unha lista coas palabras na lista `palabras` que son vocais.
+
+63. ¿Cal sería o resultado da seguinte expresión en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   impares_cuadrados = list(map(lambda x: x ** 2, filter(lambda x: x % 2 != 0, numeros)))
+   ```
+
+   - [x] `[1, 9, 25]`
+   - [ ] `[1, 3, 5]`
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [ ] `[4, 8, 12, 16, 20]`
+
+64. ¿Qué resultado produce a seguinte comprensión de lista en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   cuadrados = [x ** 2 for x in numeros]
+   ```
+
+   - [ ] `[1, 2, 3, 4, 5]`
+   - [x] `[1, 4, 9, 16, 25]`
+   - [ ] `[2, 4, 6, 8, 10]`
+   - [ ] `[1, 3, 5, 7, 9]`
+
+65. ¿Qué fai a seguinte comprensión de lista en Python?
+
+   ```python
+   palabras = ["hola", "adiós", "qué", "bien"]
+   longitudes = [len(palabra) for palabra in palabras]
+   ```
+
+   - [ ] Calcula a suma das longitudes das palabras na lista `palabras`.
+   - [ ] Xenera unha lista coas palabras da lista `palabras` que teñen unha lonxitude maior a 4.
+   - [x] Xenera unha lista coas longitudes das palabras na lista `palabras`.
+   - [ ] Converte todas as palabras na lista `palabras` a maiúsculas.
+
+66. ¿Cal sería o resultado da seguinte comprensión de lista en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   pares_duplicados = [x * 2 for x in numeros if x % 2 == 0]
+   ```
+
+   - [ ] `[2, 4, 6, 8, 10]`
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [x] `[4, 8]`
+   - [ ] `[2, 6, 10]`
+
+67. ¿Qué resultado produce a seguinte comprensión de lista en Python?
+
+   ```python
+   palabras = ["hola", "adiós", "qué", "bien"]
+   vocales = [vocal for palabra in palabras for vocal in palabra if vocal in "aeiou"]
+   ```
+
+   - [ ] Filtra as palabras na lista `palabras` que conteñen vocais.
+   - [ ] Filtra as vocais das palabras na lista `palabras`.
+   - [x] Xenera unha lista coas vocais de todas as palabras na lista `palabras`.
+   - [ ] Xenera unha lista coas palabras na lista `palabras` que son vocais.
+
+68. ¿Qué fai a seguinte comprensión de lista en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   impares_cuadrados = [x ** 2 for x in numeros if x % 2 != 0]
+   ```
+
+   - [x] `[1, 9, 25]`
+   - [ ] `[1, 3, 5]`
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [ ] `[4, 8, 12, 16, 20]`
+
+69. ¿Cal sería o resultado da seguinte comprensión de lista en Python?
+
+   ```python
+   numeros = [1, 2, 3, 4, 5]
+   cuadrados_pares = [x ** 2 for x in numeros if x % 2 == 0]
+   ```
+
+   - [ ] `[1, 4, 9, 16, 25]`
+   - [ ] `[2, 4]`
+   - [x] `[4, 16]`
+   - [ ] `[1, 3, 5]`
